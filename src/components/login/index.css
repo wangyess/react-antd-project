@@ -1,0 +1,65 @@
+.box{
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+.logo-box{
+  width: 100%;
+  height:100px;
+  margin: 20px 0;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+.logo{
+  width: 100px;
+  height: 100px;
+  animation: App-logo-spin infinite 10s linear;
+}
+
+.logo img{
+  width: 100%;
+  height:100%;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+p{
+  margin: 0;
+}
+.login-box{
+  width: 350px;
+  height: 380px;
+  padding: 15px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 0 8px 3px rgb(238, 238, 238);
+}
+.login-box .item{
+  margin-bottom: 20px;
+}
+.login-box .item label{
+  color: black;
+}
+.sign-up-box{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  margin-top: 20px;
+}
+.create-one{
+  color: #1890ff;
+  cursor:pointer;
+}
+.prompt-box{
+  width: 50%;
+}
