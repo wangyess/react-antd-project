@@ -5,7 +5,7 @@ class Home extends Component {
     return (
       <div>
         <div className="header">header</div>
-         <div className="content">content</div>
+         <div className="content">contents</div>
          <div className="footer">footer</div>
       </div>
     )
