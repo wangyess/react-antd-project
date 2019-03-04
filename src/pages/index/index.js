@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './index.css'
 
-// import { Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 import { Row, Col } from 'antd';
 
 import Header from '../../components/header/header'
 import Home from '../../components/home/index';
+import Template from '../../components/template/index';
 
 class Index extends Component {
   render() {
@@ -23,9 +24,15 @@ class Index extends Component {
         {/* content 内容区 */}
         <Row>
           <Col span={22} offset={1}>
-            <div className="content">
-               
-            </div>
+            {/* 想在这里  动态的切换  /home   /template   这下面  该怎么写 */}
+            <Router>
+              <div className="content">
+                <Switch>
+                  <Route path="/home" component={Home}></Route>
+                  <Route path="/template" component={Template}></Route>
+                </Switch>
+              </div>
+            </Router>
           </Col>
         </Row>
         {/* footer 底部 */}

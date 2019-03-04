@@ -25,6 +25,9 @@ class Header extends Component {
       case 'home':
         this.props.router.push('/home')
         return
+      case 'template':
+        this.props.router.push('/template')
+        return
       default:
         return
     }
