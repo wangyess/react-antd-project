@@ -10,7 +10,7 @@ class Login extends Component {
     useranme: null,
     password:null,
   }
-
+  
    promptBox() {
     // 提示信息
     return (
