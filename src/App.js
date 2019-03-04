@@ -1,14 +1,18 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import Home from './components/home/home';
-import Login from './components/login/login';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
+import Index from './pages/index/index';
+import Login from './pages/login/login';
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/login" component={Login} />
+          <Switch>
+            <Route exact strict path="/" component={Index} />
+            <Route exact strict path="/login" component={Login} />
+          </Switch>
         </div>
       </Router>
     );

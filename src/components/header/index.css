@@ -1,0 +1,16 @@
+.ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-item-selected{
+  color: white !important;
+}
+.ant-menu-horizontal > .ant-menu-submenu-selected , .ant-menu-horizontal > .ant-menu-submenu:hover, .ant-menu-horizontal > .ant-menu-item-active, .ant-menu-horizontal > .ant-menu-submenu-open, .ant-menu-submenu-title:hover, .ant-menu-item-selected{
+  color: white !important;
+}
+
+/* .ant-menu-dark .ant-menu-inline.ant-menu-sub{
+  background:rgb(156, 156, 156) !important
+} */
+.ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
+   background: rgb(41, 41, 41)
+}
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub{
+    background:rgb(61, 61, 61) !important
+}
