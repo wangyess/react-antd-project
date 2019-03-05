@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './index.css'
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { Route } from "react-router-dom";
 
 import { Row, Col } from 'antd';
 
@@ -12,10 +12,10 @@ import Template from '../../components/template/index';
 class Index extends Component {
   render() {
     return (
-      <div>
+      <div className="setMinHeight">
         {/* header 头部 */}
         <Row className="header-box">
-          <Col span={22} offset={1}>
+          <Col span={22} offset={1} >
             <div className="header">
               <Header router={this.props.history} />
             </div>
@@ -24,15 +24,10 @@ class Index extends Component {
         {/* content 内容区 */}
         <Row>
           <Col span={22} offset={1}>
-            {/* 想在这里  动态的切换  /home   /template   这下面  该怎么写 */}
-            <Router>
-              <div className="content">
-                <Switch>
-                  <Route path="/home" component={Home}></Route>
-                  <Route path="/template" component={Template}></Route>
-                </Switch>
-              </div>
-            </Router>
+            <div className="content">
+              <Route exact strict path="/index" component={Home} />
+              <Route exact strict path="/index/template" component={Template} />
+            </div>
           </Col>
         </Row>
         {/* footer 底部 */}

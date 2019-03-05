@@ -20,13 +20,13 @@ class Header extends Component {
 
     switch (e.key) {
       case 'login':
-        this.props.router.push('/login')
+        this.props.router.push('/')
         return
       case 'home':
-        this.props.router.push('/home')
+        this.props.router.push('/index')
         return
       case 'template':
-        this.props.router.push('/template')
+        this.props.router.push('/index/template')
         return
       default:
         return

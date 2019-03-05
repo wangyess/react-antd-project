@@ -5,9 +5,6 @@
   color: white !important;
 }
 
-/* .ant-menu-dark .ant-menu-inline.ant-menu-sub{
-  background:rgb(156, 156, 156) !important
-} */
 .ant-menu.ant-menu-dark .ant-menu-item-selected, .ant-menu-submenu-popup.ant-menu-dark .ant-menu-item-selected{
    background: rgb(41, 41, 41)
 }

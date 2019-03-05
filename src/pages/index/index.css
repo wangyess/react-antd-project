@@ -2,3 +2,6 @@
   width: 100%;
   background:rgb(61, 61, 61);
 }
+.setMinHeight{
+  min-width: 580px;
+}
