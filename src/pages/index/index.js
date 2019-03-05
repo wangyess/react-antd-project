@@ -17,7 +17,7 @@ class Index extends Component {
         <Row className="header-box">
           <Col span={22} offset={1} >
             <div className="header">
-              <Header router={this.props.history} />
+              <Header router={this.props} />
             </div>
           </Col>
         </Row>

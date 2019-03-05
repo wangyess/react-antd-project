@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './index.css'
-
 import { Menu, Icon } from 'antd';
 const SubMenu = Menu.SubMenu;
 
@@ -20,13 +19,14 @@ class Header extends Component {
 
     switch (e.key) {
       case 'login':
-        this.props.router.push('/')
+        console.log(this.props)
+        this.props.router.history.push('/')
         return
       case 'home':
-        this.props.router.push('/index')
+        this.props.router.history.push('/index')
         return
       case 'template':
-        this.props.router.push('/index/template')
+        this.props.router.history.push('/index/template')
         return
       default:
         return
