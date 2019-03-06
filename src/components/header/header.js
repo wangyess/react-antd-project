@@ -19,8 +19,7 @@ class Header extends Component {
 
     switch (e.key) {
       case 'login':
-        console.log(this.props)
-        this.props.router.history.push('/')
+        this.props.router.history.push('/login')
         return
       case 'home':
         this.props.router.history.push('/index')

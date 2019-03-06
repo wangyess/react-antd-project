@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Redirect} from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect, Switch } from "react-router-dom";
 
 import Index from './pages/index/index';
 import Login from './pages/login/login';
@@ -9,9 +9,11 @@ class App extends Component {
     return (
       <Router>
         <div>
-            <Route exact strict path="/" component={Login} />
-            <Redirect exact from="/" to="/index" />
+          <Switch>
+            <Route exact path="/" render={() => <Redirect from="/" to="/index" />} />
+            <Route path="/login" component={Login} />
             <Route path="/index" component={Index} />
+          </Switch>
         </div>
       </Router>
     );
